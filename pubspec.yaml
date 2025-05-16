@@ -1,0 +1,48 @@
+name: gp12
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'   # ensure null-safety support
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  crypto: ^3.0.3
+  postgres: ^3.5.6
+  image_picker: ^1.0.7
+  shared_preferences: ^2.2.2
+  provider: ^6.1.4
+  intl: ^0.20.2
+
+  # TFLite runtime only
+  tflite_flutter: ^0.11.0
+
+  # Camera 
+  camera: ^0.11.1
+
+
+  flutter_tts: ^3.5.0
+  http: ^0.13.0
+  path: ^1.8.0
+  path_provider: ^2.0.11
+  permission_handler: 11.3.0
+
+  # Image processing
+  image: ^4.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/mobilenetv2_best.tflite
+    - assets/labels.txt
